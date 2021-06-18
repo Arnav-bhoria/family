@@ -1,0 +1,29 @@
+<html>
+   
+    <head>
+        <link rel="stylesheet" href="style.css"
+        <title>Family </title>
+    </head>
+    
+    <body>
+     <h1> Family Book </h1>
+     <hr>
+     <img id="family_img;" src="download.jpg">
+     <h3 id="one">our family book</h3>
+     <button type="button" onclick="family()">Next</button>
+     <hr>
+     <script>
+         var names=["My Father (Praveen Bhoria)";"Me (Arnav Bhoria)"];
+         var images=["IWLL2MIQ.jpg","3740035.png"];
+         var i=0;
+         function family(){
+             document.getElementById("one").innerHTML=names[i];
+             document.getElementById("family_img").src=images[i];
+             i++
+             if(i==2){
+                 i=0;
+             }
+         }
+     </script>
+    </body>
+</html>
